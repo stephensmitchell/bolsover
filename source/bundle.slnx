@@ -1,0 +1,26 @@
+<Solution>
+  <Folder Name="/bolsover/" />
+  <Folder Name="/bolsover/source/" />
+  <Folder Name="/bolsover/source/submodules/">
+    <Project Path="submodules/AlibreExportOpen/AlibreExportOpen.csproj" />
+    <Project Path="submodules/GearCalculator/GearCalculator.csproj" />
+  </Folder>
+  <Folder Name="/bolsover/source/submodules/AlibreBOM/">
+    <Project Path="submodules/AlibreBOM/AlibreBOM/AlibreBOM.csproj" />
+  </Folder>
+  <Folder Name="/bolsover/source/submodules/AlibreShortcuts/">
+    <Project Path="submodules/AlibreShortcuts/AlibreShortcuts/AlibreShortcuts.csproj" />
+    <Project Path="submodules/AlibreShortcuts/UnitTests/UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/bolsover/source/submodules/DataBrowserForAlibre/">
+    <Project Path="submodules/DataBrowserForAlibre/AlibreDataBrowser/AlibreDataBrowser.csproj" />
+  </Folder>
+  <Folder Name="/bolsover/source/submodules/GearCalculator/">
+    <Project Path="submodules/GearCalculator/GearCalculatorUi/GearCalculatorUi.csproj" />
+    <Project Path="submodules/GearCalculator/UnitTests/UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/bolsover/source/submodules/UtilitiesForAlibre/">
+    <Project Path="submodules/UtilitiesForAlibre/UnitTests/UnitTests.csproj" />
+    <Project Path="submodules/UtilitiesForAlibre/UtilitiesForAlibre/UtilitiesForAlibre.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <!-- Centralized configuration for resolving external dependencies across all projects -->
+  <PropertyGroup>
+    <!-- Allow override from environment: set ALIBRE_PROGRAM_DIR to the Alibre Program folder -->
+    <AlibreProgramDir Condition="'$(ALIBRE_PROGRAM_DIR)' != ''">$(ALIBRE_PROGRAM_DIR)</AlibreProgramDir>
+  </PropertyGroup>
+
+  <!-- Try common Alibre Design install paths if env var is not set -->
+  <Choose>
+    <When Condition="'$(AlibreProgramDir)' == '' and Exists('C:\\Program Files\\Alibre Design 27.0.1.27039\\Program')">
+      <PropertyGroup>
+        <AlibreProgramDir>C:\Program Files\Alibre Design 27.0.1.27039\Program</AlibreProgramDir>
+      </PropertyGroup>
+    </When>
+    <When Condition="'$(AlibreProgramDir)' == '' and Exists('C:\\Program Files\\Alibre Design 27.0.0.27038\\Program')">
+      <PropertyGroup>
+        <AlibreProgramDir>C:\Program Files\Alibre Design 27.0.0.27038\Program</AlibreProgramDir>
+      </PropertyGroup>
+    </When>
+    <When Condition="'$(AlibreProgramDir)' == '' and Exists('C:\\Program Files\\Alibre Design 26.0.0.26040\\Program')">
+      <PropertyGroup>
+        <AlibreProgramDir>C:\Program Files\Alibre Design 26.0.0.26040\Program</AlibreProgramDir>
+      </PropertyGroup>
+    </When>
+    <When Condition="'$(AlibreProgramDir)' == '' and Exists('C:\\Program Files\\Alibre Design 25.0.1.25037\\Program')">
+      <PropertyGroup>
+        <AlibreProgramDir>C:\Program Files\Alibre Design 25.0.1.25037\Program</AlibreProgramDir>
+      </PropertyGroup>
+    </When>
+  </Choose>
+
+  <PropertyGroup>
+    <!-- Optional override for ObjectListView.dll location via OLV_DIR env var -->
+    <ObjectListViewDir Condition="'$(OLV_DIR)' != ''">$(OLV_DIR)</ObjectListViewDir>
+  </PropertyGroup>
+
+  <!-- Prepend custom search paths so hardcoded HintPaths can be ignored when incorrect -->
+  <PropertyGroup>
+    <AssemblySearchPaths>
+      $(AlibreProgramDir);$(ObjectListViewDir);{HintPathFromItem};{TargetFrameworkDirectory};{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}
+    </AssemblySearchPaths>
+  </PropertyGroup>
+</Project>
