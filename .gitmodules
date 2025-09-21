@@ -1,0 +1,27 @@
+[submodule "source/submodules/GearCalculator"]
+	path = source/submodules/GearCalculator
+	url = https://github.com/bolsover/GearCalculator.git
+[submodule "source/submodules/UtilitiesForAlibre"]
+	path = source/submodules/UtilitiesForAlibre
+	url = https://github.com/bolsover/UtilitiesForAlibre.git
+[submodule "source/submodules/AlibreShortcuts"]
+	path = source/submodules/AlibreShortcuts
+	url = https://github.com/bolsover/AlibreShortcuts.git
+[submodule "source/submodules/AlibreBOM"]
+	path = source/submodules/AlibreBOM
+	url = https://github.com/bolsover/AlibreBOM.git
+[submodule "source/submodules/AlibreExportOpen"]
+	path = source/submodules/AlibreExportOpen
+	url = https://github.com/bolsover/AlibreExportOpen.git
+[submodule "source/submodules/DataBrowserForAlibre"]
+	path = source/submodules/DataBrowserForAlibre
+	url = https://github.com/bolsover/DataBrowserForAlibre.git
+[submodule "source/submodules/CycloidalGear"]
+	path = source/submodules/CycloidalGear
+	url = https://github.com/bolsover/CycloidalGear.git
+[submodule "source/submodules/UtilitiesForAlibreDocs"]
+	path = source/submodules/UtilitiesForAlibreDocs
+	url = https://github.com/bolsover/UtilitiesForAlibreDocs.git
+[submodule "source/submodules/involute"]
+	path = source/submodules/involute
+	url = https://github.com/bolsover/involute.git
