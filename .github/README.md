@@ -2,7 +2,7 @@
 BOLSOVER ADD-ON BUNDLE -  BUILD REPORT - TEMPLATE
 
 Status: Preliminary
-Repository: bolsover
+Repository: bolsover-bundle
 License: MIT
 Target Framework: .NET Framework 4.8.1
 Build Date: 2025-01-20
